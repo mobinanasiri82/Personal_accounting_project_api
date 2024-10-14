@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/static/style2.css" />
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+    />
+    <title>جدول تراکنش ها</title>
+</head>
+<body>
+    <main>
+    <div class="container">
+        <div class="row my-3 gap-3">
+        <aside class="col-12 col-md-3 shadow m-0 p-0 rounded-2">
+            <div class="image w-75 d-flex align-items-center p-2 gap-2">
+            <div
+                class="logo__wrapper rounded-circle bg-white d-flex justify-content-center align-items-center p-1"
+            >
+                <img
+                class="logo__img"
+                src="/static/IMG_20240803_232003_891.png"
+                alt="logo"
+                />
+            </div>
+            <h3 class="m-0 text-white fs-5 fw-bold">رایا</h3>
+            </div>
+            <ul class="px-2 mt-4">
+            <li class="py-2 mb-2  rounded-1">
+                <a href="/" class="fs-6">
+                <i class="bx bxs-dashboard"></i>
+                داشبورد
+                </a>
+            </li>
+            <li class="py-2 mb-2 rounded-1">
+                <a href="/Income/" class="fs-6">
+                <i class="bx bx-money"></i>
+                درآمدها
+                </a>
+            </li>
+            <li class="py-2 mb-2 rounded-1">
+                <a href="/Expense/" class="fs-6">
+                <i class="bx bx-money-withdraw"></i>
+                هزینه ها
+                </a>
+            </li>
+            <li class="py-2 mb-2 rounded-1 active">
+                <a href="/Tarakonsh/" class="fs-6">
+                <i class="bx bx-table"></i>
+                جدول تراکنش ها
+                </a>
+            </li>
+            </ul>
+        </aside>
+        <div class="left__section col-12 col-md-8">
+            <h1 class="fs-4 fw-bold mt-5">  جدول تراکنش ها</h1>
+            <div class="line w-100 mt-4"></div>
+            <div class="mt-3">
+            <div class="d-flex align-items-end justify-content-end">
+                <a href="http://127.0.0.1:8000/admin/main/account/">
+                <button class="account  bg-black rounded-2 p-1">ساخت حساب</button>
+                </a>
+                <a href="http://127.0.0.1:8000/admin/main/transaction/">
+                <button class="tarakonsh  rounded-2 p-1">ثبت تراکنش </button>
+                </a>
+                
+        </div>
+            </div>
+            <div class="mt-3">
+            <h3 class="fs-6 fw-bold pb-2">وضعیت جدول تراکنش </h3>
+            <table class="table table-primary mt-3 rounded-1 overflow-hidden">
+                <button class="filter rounded-2 mt-2">
+            <div class="d-flex justify-content-center align-items-center p-1 gap-1">
+                    <h6 class="text-white m-0 p-1 "> فیلتر جدول تراکنش</h6>
+                    <i class=' i-down bx bxs-down-arrow d-flex justify-content-center align-items-center text-white '></i>
+                </div>
+            </button>
+                <thead>
+                <tr>
+                    <th scope="col">ردیف</th>
+                    <th scope="col">قیمت</th>
+                    <th scope="col">دسته بندی</th>
+                    <th scope="col">حساب</th>
+                    <th scope="col">زمان</th>
+                </tr>
+                </thead>
+                <tbody class="tbody-content">
+                </tbody>
+            </table>
+            <div class="empty d-flex flex-column align-items-center d-none">
+                <img src="/static/image.png" alt="empty task" />
+                <h6>فعالیت هایی نداشتید</h6>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </main>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+    ></script>
+    <script src="/static/script2.js"></script>
+</body>
+</html>

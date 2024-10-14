@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    direction: rtl;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  aside {
+    background-color: white;
+    height: fit-content;
+  }
+  
+  .image {
+    background-color: rgb(114, 130, 217);
+    border-radius: 30px 0 0 30px;
+    -webkit-border-radius: 30px 0 0 30px;
+    -moz-border-radius: 30px 0 0 30px;
+    -ms-border-radius: 30px 0 0 30px;
+    -o-border-radius: 30px 0 0 30px;
+  }
+  
+  .logo__img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  li {
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+  }
+  
+  li a {
+    color: black;
+  }
+  
+  .active {
+    background-color: rgb(114, 130, 217);
+  }
+  
+  .active a {
+    color: white;
+  }
+  
+  li:hover {
+    background-color: rgb(114, 130, 217);
+  }
+  
+  li:hover a {
+    color: white;
+  }
+  
+  .left__section .line {
+    height: 1px;
+    background-color: rgb(114, 130, 217);
+  }
+  
+  .empty img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .account{
+    border: 2px solid white;
+    font-size: 14px;
+  }
+
+  .tarakonsh{
+    background-color: green;
+    border: 2px solid white;
+    font-size: 14px;
+  }
+
+  .filter{
+    border: 2px solid white;
+    background-color:red;
+    font-size: 7px;
+    padding-inline: 5px;
+}
+
+h6{
+  font-size: 12px;
+}
+
+.i-down{
+  font-size: 9px;
+}
